@@ -1,0 +1,32 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+ CopyRight Alejandro Montoya.
+*/
+/* 
+    Created on : 10-dic-2014, 8:53:33
+    Author     : Javier Oltra Riera
+*/
+
+body{
+    background-color: #d2691e;
+}
+
+#wrapper{
+    height: 800px;
+    width: 1200px;
+    background-color: #006400;
+    margin-right: auto;
+    margin-left: auto;
+}
+header{
+    width: 1198px;
+    height: 200px;
+    border: 2px solid black;
+}
+nav{
+    width: 1198px;
+    height: 50px;
+    border: 2px solid black;
+}
