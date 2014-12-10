@@ -14,7 +14,7 @@ body{
 }
 
 #wrapper{
-    height: 800px;
+    height: 900px;
     width: 1024px;
     margin-right: auto;
     margin-left: auto;
@@ -33,11 +33,10 @@ nav{
     height: 50px;
 }
 #main{
-    
     background: #a7bc7a url(images/pattern.png)top left repeat;
     padding-right:25px; 
     width: 999px;
-    height: 400px;
+    height: 500px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -47,13 +46,44 @@ nav{
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
     margin-top: 10px;
 }
-#banner{
+#fotos{
+    position: absolute;
     margin-top: 30px;
-    float: right;
+    margin-left: 100px;
+    width: 500px;
+    height: 325px;
+}
+#fotos img{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    width: 500px;
+    height: 325px;
+    animation: animacion_fotos 10s linear infinite;
+    -webkit-animation: animacion_fotos 10s linear infinite;
+}
+@keyframes animacion_fotos{
+    
+    0% {opacity: 0;margin-left: -100px;}
+    50% {opacity: 1;margin-left: 0px;}
+    100% {opacity: 0;margin-left: 100px;}
+}
+@-webkit-keyframes animacion_fotos{
+    0% {opacity: 0;margin-left: -100px;}
+    50% {opacity: 1;margin-left: 0px;}
+    100% {opacity: 0;margin-left: 100px;}
+    
+}
+
+#banner{
+    margin-left: 800px;
+    position: absolute;
+    margin-top: 30px;
     width: 200px;
     height: 325px;
-    border: 2px solid black;
+    border: 1px solid black;
 }
+
 footer{
     background: #a7bc7a url(images/pattern.png)top left repeat;
     width: 1024px;
