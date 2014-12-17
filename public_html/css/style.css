@@ -10,7 +10,7 @@ and open the template in the editor.
 */
 
 body{
-    background: url(images/pattern.png)top left repeat;
+    background: url(../images/pattern.png)top left repeat;
 }
 
 #wrapper{
@@ -18,9 +18,10 @@ body{
     width: 1024px;
     margin-right: auto;
     margin-left: auto;
+    
 }
 header{
-    background: url("images/cabecera.png");
+    background: url("../images/cabecera.png");
     width: 1024px;
     height: 200px;
     background-size: 90%;
@@ -33,7 +34,7 @@ nav{
     height: 50px;
 }
 #main{
-    background: #a7bc7a url(images/pattern.png)top left repeat;
+    background: #a7bc7a url(../images/pattern.png)top left repeat;
     padding-right:25px; 
     width: 999px;
     height: 500px;
@@ -45,6 +46,9 @@ nav{
     -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
     margin-top: 10px;
+    
+    
+
 }
 #fotos{
     position: absolute;
@@ -63,7 +67,7 @@ nav{
     -webkit-animation: animacion_fotos 10s linear infinite;
 }
 @keyframes animacion_fotos{
-    
+
     0% {opacity: 0;margin-left: -100px;}
     50% {opacity: 1;margin-left: 0px;}
     100% {opacity: 0;margin-left: 100px;}
@@ -72,7 +76,7 @@ nav{
     0% {opacity: 0;margin-left: -100px;}
     50% {opacity: 1;margin-left: 0px;}
     100% {opacity: 0;margin-left: 100px;}
-    
+
 }
 
 #banner{
@@ -85,7 +89,7 @@ nav{
 }
 
 footer{
-    background: #a7bc7a url(images/pattern.png)top left repeat;
+    background: #a7bc7a url(../images/pattern.png)top left repeat;
     width: 1024px;
     height: 130px;
     margin-top: 5px;
@@ -96,6 +100,37 @@ footer{
     -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+#Contenedortexto{
+    position:absolute;
+    background-color: #586835;
+    /* border: 1px solid;*/
+    width: 1024px;
+    height: 60px;
+    margin-top: 410px;
+    overflow: hidden;
+}
+#texto{
+    
+    margin-top: 12px;
+    width: 6700px;
+    height: 60px;
+    font-size: 33px;
+    color:white;
+    margin-left: 1000px;
+    animation: animacion_texto 40s linear infinite;
+    -webkit-animation: animacion_texto 40s linear infinite;
+}
+@keyframes animacion_texto{
+    0% {margin-left: 1024px;}
+    100% {margin-left: -6700px;}
+}
+@-webkit-keyframes animacion_texto{
+    0% {margin-left: 1024px;}
+    100% {margin-left: -6700px;}
+
 }
 
 /*Menu*/
@@ -116,7 +151,7 @@ footer{
 }
 #cssmenu ul {
     zoom: 1;
-    background: #a7bc7a url(images/pattern.png) top left repeat;
+    background: #a7bc7a url(../images/pattern.png) top left repeat;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -148,7 +183,7 @@ footer{
     text-shadow: 0 1px 1px #bdcd9c;
 }
 .active {
-    background: #586835 url(images/pattern.png) top left repeat;
+    background: #586835 url(../images/pattern.png) top left repeat;
 }
 #cssmenu li {
     width: 203px;
@@ -156,7 +191,7 @@ footer{
     border-right: 1px solid #b2c58b;
 }
 #cssmenu li:hover {
-    background: #9cb369 url(images/pattern.png) top left repeat;
+    background: #9cb369 url(../images/pattern.png) top left repeat;
 }
 #cssmenu li:last-child {
     border-right: none;
@@ -164,3 +199,19 @@ footer{
     -moz-border-radius: 4px 0 0 4px;
     border-radius: 4px 0 0 4px;
 }
+
+#footer a1{
+    
+    color:white;    
+}
+
+#footer a2{
+    
+    color:white;    
+}
+
+#footer a3{
+    
+    color:white;    
+}
+
