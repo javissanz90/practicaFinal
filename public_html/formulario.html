@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+Autor = Javier Oltra Riera
+Fecha = 17-dic-2014
+Licencia = default
+Version = 1.0
+Descripcion = 
+-->
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+ CopyRight Alejandro Montoya.
+-->
+<!--CopyRight Javier Oltra Riera-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="js/formulario.js"></script>
+    </head>
+    <body>
+        <div id="formulario">
+            <form action="" id="form" oninput="activeCheck()" onsubmit="return validar();" >
+                Nombre: <input type="text" name="form" id="nombre"  required/><br/><br/>
+                Apellido1: <input type="text" name="form" id="apellido1" required/><br/><br/>
+                Apellido2: <input type="text" name="form" id="apellido2" required/><br/><br/>
+                e-Mail: <input type="email" name="form" id="email" required/><br/><br/>
+                Tel&eacute;fono fijo: <input name="form" type="number" min="900000000" max="999999999" id="fijo"/><br/><br/>
+                Tel&eacute;fono movil: <input name="form" type="number" min="600000000" max="699999999" id="movil" required/><br/><br/>
+                Descripci&oacute;n:
+                <textarea id="descripcion" name="form">Escriba la descripcion...</textarea><br/><br/>
+                Asunto:
+                <select id="asunto" name="form">
+                    <option value='' selected>--Seleccione una opcion--</option>
+                    <option name="asunto" id="reserva" value="Reserva">Reserva</option>
+                    <option name="asunto" id="visita" value="Visita">Visita</option>
+                    <option name="asunto" id="compra" value="Compra">Compra</option>
+                </select><br/><br/>
+                Terminos y condiciones de uso <input type="checkbox" id="terminos" disabled onchange="activeCheck()"/><br/><br/>
+                <input type="submit" value="Enviar" id="enviar" />
+            </form>
+            
+        </div>
+    </body>
+</html>
+
