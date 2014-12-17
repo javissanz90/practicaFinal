@@ -2,13 +2,15 @@
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
- CopyRight Alejandro Montoya.
 */
 /* 
     Created on : 10-dic-2014, 8:53:33
     Author     : Javier Oltra Riera
 */
-
+@font-face {
+    font-family: Vivaldi;
+    src: url("../fonts/Vivaldi.ttf") format("True type");
+}
 body{
     background: url(../images/pattern.png)top left repeat;
 }
@@ -46,9 +48,6 @@ nav{
     -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
     margin-top: 10px;
-    
-    
-
 }
 #fotos{
     position: absolute;
@@ -89,9 +88,11 @@ nav{
 }
 
 footer{
+    text-align: center;
+    padding-top: 35px;
     background: #a7bc7a url(../images/pattern.png)top left repeat;
     width: 1024px;
-    height: 130px;
+    height: 95px;
     margin-top: 5px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -102,7 +103,35 @@ footer{
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-
+#formulario{
+    box-shadow: black;
+    background: white url(../images/pattern.png)top left repeat;
+    padding: 10px;
+    width: 535px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    margin-left: 230px;
+    margin-top:0px;
+    font-size: 18px;
+    
+    font-family: Arial;
+}
+#main h2{
+    margin-top: 0px;
+    font-family: Vivaldi;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+#formulario table{
+    height:375px;
+    width: 300px;
+}
+#formulario input{
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
 #Contenedortexto{
     position:absolute;
     background-color: #586835;
@@ -113,15 +142,15 @@ footer{
     overflow: hidden;
 }
 #texto{
-    
-    margin-top: 12px;
+    font-family: Arial;
+    margin-top: 15px;
     width: 6700px;
     height: 60px;
-    font-size: 33px;
+    font-size: 25px;
     color:white;
     margin-left: 1000px;
-    animation: animacion_texto 40s linear infinite;
-    -webkit-animation: animacion_texto 40s linear infinite;
+    animation: animacion_texto 50s linear infinite;
+    -webkit-animation: animacion_texto 50s linear infinite;
 }
 @keyframes animacion_texto{
     0% {margin-left: 1024px;}
@@ -131,6 +160,47 @@ footer{
     0% {margin-left: 1024px;}
     100% {margin-left: -6700px;}
 
+}
+/*Boton del formulario*/
+.btn {
+  background: #a7bc7a;
+  background-image: -webkit-linear-gradient(top, #a7bc7a, #586835);
+  background-image: -moz-linear-gradient(top, #a7bc7a, #586835);
+  background-image: -ms-linear-gradient(top, #a7bc7a, #586835);
+  background-image: -o-linear-gradient(top, #a7bc7a, #586835);
+  background-image: linear-gradient(to bottom, #a7bc7a, #586835);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 21px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+.btn:hover {
+  background:  #586835;
+  background-image: -webkit-linear-gradient(top,  #586835, #a7bc7a);
+  background-image: -moz-linear-gradient(top,  #586835, #a7bc7a);
+  background-image: -ms-linear-gradient(top,  #586835, #a7bc7a);
+  background-image: -o-linear-gradient(top,  #586835, #a7bc7a);
+  background-image: linear-gradient(to bottom,  #586835, #a7bc7a);
+  text-decoration: none;
+}
+
+footer a{
+    color:white;
+    font-family: Arial;
+    font-size: 17px;
+    margin-left: 50px;
+    text-decoration: none;
+}
+footer p{
+    color:white;
+    font-family: Arial;
+    font-size: 17px;
+    margin-left: 50px;
+    margin-left: 50px;
 }
 
 /*Menu*/
@@ -198,20 +268,5 @@ footer{
     -webkit-border-radius: 4px 0 0 4px;
     -moz-border-radius: 4px 0 0 4px;
     border-radius: 4px 0 0 4px;
-}
-
-#footer a1{
-    
-    color:white;    
-}
-
-#footer a2{
-    
-    color:white;    
-}
-
-#footer a3{
-    
-    color:white;    
 }
 

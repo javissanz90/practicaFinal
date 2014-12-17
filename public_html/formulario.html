@@ -10,7 +10,6 @@ Descripcion =
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
- CopyRight Alejandro Montoya.
 -->
 <!--CopyRight Javier Oltra Riera-->
 <html>
@@ -19,29 +18,82 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript" src="js/formulario.js"></script>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div id="formulario">
-            <form action="" id="form" oninput="activeCheck()" onsubmit="return validar();" >
-                Nombre: <input type="text" name="form" id="nombre"  required/><br/><br/>
-                Apellido1: <input type="text" name="form" id="apellido1" required/><br/><br/>
-                Apellido2: <input type="text" name="form" id="apellido2" required/><br/><br/>
-                e-Mail: <input type="email" name="form" id="email" required/><br/><br/>
-                Tel&eacute;fono fijo: <input name="form" type="number" min="900000000" max="999999999" id="fijo"/><br/><br/>
-                Tel&eacute;fono movil: <input name="form" type="number" min="600000000" max="699999999" id="movil" required/><br/><br/>
-                Descripci&oacute;n:
-                <textarea id="descripcion" name="form">Escriba la descripcion...</textarea><br/><br/>
-                Asunto:
-                <select id="asunto" name="form">
-                    <option value='' selected>--Seleccione una opcion--</option>
-                    <option name="asunto" id="reserva" value="Reserva">Reserva</option>
-                    <option name="asunto" id="visita" value="Visita">Visita</option>
-                    <option name="asunto" id="compra" value="Compra">Compra</option>
-                </select><br/><br/>
-                Terminos y condiciones de uso <input type="checkbox" id="terminos" disabled onchange="activeCheck()"/><br/><br/>
-                <input type="submit" value="Enviar" id="enviar" />
-            </form>
-            
+        <div id="wrapper">
+            <header></header>
+            <nav><div id='cssmenu'>
+                    <ul>
+                        <li><a href='index.html'><span>INICIO</span></a></li>
+                        <li><a href='#'><span>ACTIVIDADES</span></a></li>
+                        <li><a href='#'><span>GALERIA</span></a></li>
+                        <li><a href='#'><span>CONOCENOS</span></a></li>
+                        <li class='active'><a href='formulario.html'><span>CONTACTO</span></a></li>
+                    </ul>
+                </div></nav>
+            <div id="main">
+                <h2>Contacta con nosotros</h2>
+                <div id="formulario">
+                    <form action="" id="form" oninput="activeCheck()" onsubmit="return validar();" >
+                        <table>
+                            <tr>
+                                <td>Nombre:</td>
+                                <td><input type="text" name="form" id="nombre"  required/></td>
+                            </tr>
+                            <tr>
+                                <td>Apellido1:</td>
+                                <td><input type="text" name="form" id="apellido1" required/></td>
+                            </tr>
+                            <tr>
+                                <td>Apellido2:</td>
+                                <td><input type="text" name="form" id="apellido2" required/></td>
+                            </tr>
+                            <tr>
+                                <td>e-Mail:</td>
+                                <td><input type="email" name="form" id="email" required/></td>
+                            </tr>
+                            <tr>
+                                <td>Tel&eacute;fono fijo:</td>
+                                <td><input name="form" type="number" min="900000000" max="999999999" id="fijo"/></td>
+                            </tr>
+                            <tr>
+                                <td>Tel&eacute;fono movil:</td>
+                                <td><input name="form" type="number" min="600000000" max="699999999" id="movil" required/></td>
+                            </tr>
+                            <tr>
+                                <td>Descripci&oacute;n:</td>
+                                <td><textarea id="descripcion" style="width: 248px" name="form">Escriba la descripcion...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>Asunto:</td>
+                                <td>
+                                    <select id="asunto" name="form" style="width: 248px">
+                                        <option value='' selected>--Seleccione una opcion--</option>
+                                        <option name="asunto" id="reserva" value="Reserva">Reserva</option>
+                                        <option name="asunto" id="visita" value="Visita">Visita</option>
+                                        <option name="asunto" id="compra" value="Compra">Compra</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Terminos y condiciones de uso</td>
+                                <td><input type="checkbox" id="terminos" disabled onchange="activeCheck()"  style="width: 20px; height: 20px;"/></td>
+                            </tr>
+                            <tr>
+                                <td><input type="submit" class="btn" value="Enviar" id="enviar" /></td>
+                                <td><input type="reset" class="btn" value="Borrar" id="borrar" /></td>
+                            </tr>
+                        </table>                        
+                    </form>
+                </div>
+            </div>
+            <footer>
+                <a href="formulario.html">Contacta con nosotros</a>
+                <a href="https://www.google.com/maps?ll=40.509852,-3.637306&z=12&t=m&hl=es-ES&gl=ES&mapclient=embed&daddr=H%C3%ADpica+La+Moraleja+y+Pony+Club+Calle+del+Camino+Ancho,+0+28109+Alcobendas,+Madrid@40.511368,-3.605618">Como llegar</a>
+                <a href="#">Terminos y condiciones de uso</a>
+                <p>© Javier Oltra Riera - Javier Salcedo Sanz - Hector Espinosa Torres - Miguel Angel Benito</p>
+            </footer>
         </div>
     </body>
 </html>
